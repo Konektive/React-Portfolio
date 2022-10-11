@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.full {
+    overflow: hidden;
+}
+.description{
+    width: 45vw;
+    height: auto;
+    color: white;
+    background-color:rgba(228, 162, 21, 0.322);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 20px;
+    animation: backInLeft 1s linear;
+}
+.description h1{
+    font-family: 'Sedgwick Ave Display';
+    margin: 20px 10px;
+}
+.description p{
+    padding: 20px 40px;
+}
+.photo{
+    height: 100%;
+}
+
+.border{
+    height: 75%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    border-radius: 9999px;
+    background-color: rgba(228, 162, 21, 0.26);
+    animation: drift 1s ease-in ;
+}
+.technologies{
+opacity: 0.8;
+position: absolute;
+bottom: 10vh;
+left: 13vw;
+width: 30vw;
+height: 10vh;
+background-color: rgba(0, 0, 0, 0.404);
+overflow: hidden;
+border-radius: 40px;
+}
+.technologies img{
+    position: absolute;
+    left: -150px;
+    transform: translateY(15%);
+    height: 80%;
+    animation: technologies 6s linear infinite;
+}
+.technologies .second{
+    animation: technologies 6s 1s linear infinite;
+}
+.technologies .third{
+    animation: technologies 6s 2s linear infinite;
+}
+.technologies .fourth{
+    animation: technologies 6s 3s linear infinite;
+}
+.technologies .fifth{
+    animation: technologies 6s 4s linear infinite;
+}
+.technologies .sixth{
+    animation: technologies 6s 5s linear infinite;
+}
+
+@keyframes drift {
+    0%{
+    opacity: 0;
+    bottom: 0vh;
+    right: 0vw;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+
+@keyframes backInLeft {
+    from{
+        left:-20%;
+    }
+    to{
+        left: 5%;
+    }
+}
+
+
+@keyframes technologies {
+    from{
+        left: -100px;
+    }
+    to{
+        left: 800px;
+    }
+}
+
+@media(max-width:1400px){
+.border{
+    height: 65%;
+    top: 15%;
+}
+.description{
+    top: 15%;
+}
+.technologies{
+    bottom: 10vh;
+}
+}
+
+@media(max-width:1137px){
+
+    .technologies {
+            bottom: 5vh;
+        }
+}
+@media(max-width:1028px){
+    .technologies{
+        left: 55%;
+    }
+}
+
+
+
+@media(max-width:975px){
+    .border{
+        height: 55%;
+        top: 12vh;
+        right: 50%;
+        transform: translate(50%);
+    }
+    .description {
+        width: 90%;
+        height: auto;
+        top: 85%;
+        left: 5%;
+    }
+    .technologies{
+    bottom: 20vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 10%;
+    }
+}

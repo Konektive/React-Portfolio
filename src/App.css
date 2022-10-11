@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+header a.active {
+  color: #887241;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #887241;
+}
+:root{
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(31, 31, 31) 0%, rgb(0, 0, 0) 99.4%);
+}

@@ -1,0 +1,30 @@
+.h1{
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(206, 170, 91);
+    font-family: 'Sedgwick Ave Display';
+    font-size: 5rem;
+    text-align: center;
+}
+
+.wrapper {
+margin: 2rem;
+display: flex;
+gap: 1rem;
+justify-content: center;    
+flex-wrap: wrap;   
+}
+
+@media(max-width:975px){
+    .h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width:600px){
+    .h1{
+        font-size: 3rem;
+    }
+}
+

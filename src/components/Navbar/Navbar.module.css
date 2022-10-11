@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(2, 2, 2, 0.220);
+  padding: 0 10%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top:0;
+  left:10vw;
+  transform: translateY(25%);
+}
+.header nav {
+  height: 100%;
+  margin-left: 30vw;
+}
+
+.header ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - (10vh));
+}
+
+.mobileNavigation{
+  display: none;
+}
+
+.bars{
+  display: none;
+  color:rgb(206, 170, 91)
+}
+.bars:hover{
+  opacity: 0.7;
+}
+
+.header li {
+  margin: 0 1rem;
+}
+.header li.socials {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.header a {
+  color: rgb(168, 168, 168);
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:active {
+  color: #887241;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #887241;
+}
+
+.socials a:hover{
+  border: none;
+}
+
+.header button {
+  background-color: rgba(20, 20, 20, 0.452);
+  color: rgb(206, 170, 91);
+  border: 2px solid rgb(206, 170, 91);
+  padding: 10px 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.header button:hover {
+  background-color: rgb(206, 170, 91);
+  color: rgb(19, 19, 19);
+  border-color: rgb(68, 68, 68);
+}
+
+@media (max-width:975px) {
+  .navigation {
+    display: none;
+  }
+  .mobileNavigation{
+    display: block;
+  }
+  .header nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .header ul {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 45vh;
+  }
+
+  .header ul li {
+    line-height: 3.5rem;
+  }
+
+  .bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .header li.socials {
+    padding-left: 0;
+  }
+}

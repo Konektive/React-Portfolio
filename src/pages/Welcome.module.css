@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+.wrapper{
+background-image: url(../assets/backgroundstars.png);
+opacity: .9;
+height: calc(100vh - 80px);
+overflow: hidden;
+}
+.image {
+    width: 65vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: iconApear 1s linear;
+    aspect-ratio: 1.4;
+}
+
+.banner{
+position: absolute;
+top: 20vh;
+left: 5vw;
+}
+
+.banner h1,span{
+   color: rgb(194, 194, 194);
+   line-height: 4rem;
+   margin: 40px 0 30px 0 ;
+   font-size: 4rem;
+   font-weight: bold;
+font-family: 'Sedgwick Ave Display';
+}
+
+
+.banner p{
+    max-width: 25vw;
+    color: aliceblue;
+    text-align: center;
+}
+
+@keyframes iconApear {
+    from{
+        bottom:-10vh;
+    }
+    to{
+        bottom: 0vh;
+    }
+}
+
+
+@media (max-width:620px){
+
+        .image {
+                width: 100vw;
+            }
+    .banner span,
+    .banner h1 {
+            line-height: 2rem;
+            font-size: 2rem;
+            margin: 0;
+        }
+        .banner{
+            top: 12vh;
+            width: 95vw;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        .banner p{
+            margin-top: 5vh;
+            max-width: 90%;
+        }
+}
